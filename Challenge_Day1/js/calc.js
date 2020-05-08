@@ -19,5 +19,5 @@ function calc() {
 function reset() {
     //초기화
     display_txtBox.setAttribute("value", "");
-    result_txtBox.setAttribute("value","");
+    result_txtBox.setAttribute("value","");     
 }
