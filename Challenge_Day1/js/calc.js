@@ -5,12 +5,19 @@ function add(oper) {
     var display = document.getElementById('display'); 
     display.value = display.value + oper;
 }
-function calculate() {
-    var display = document.getElementById('display');
-    var result = eval(display.value);
-    result_txtBox.setAttribute("value",result)
+function calc() {
+    try{
+        var display = document.getElementById('display');
+        var result = eval(display.value);
+        result_txtBox.setAttribute("value",result)
+    }catch{ // eval에서 오류가 떴을 때 처리 방법
+        result_txtBox.setAttribute("value","잘못된 값을 입력받았습니다.")
+        display_txtBox.value = "";
+        
+    }
 }
 function reset() {
-    display_txtBox.value = "";
-    result_txtBox.value = "";
+    //초기화
+    display_txtBox.setAttribute("value", "");
+    result_txtBox.setAttribute("value","");
 }
