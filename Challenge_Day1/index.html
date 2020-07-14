@@ -1,0 +1,55 @@
+<html>
+<head>
+    <title>Calculate</title>
+ 
+    <link rel="stylesheet" type="text/css" href="css/calcform.css">
+</head>
+<body>
+    <!--onclick을 이용해 이벤트 핸들러 받아서 함수 실행-->
+    <table class = "result" border="1">
+        <tr>
+            <td class="printform" colspan="4" >
+                <input class="print" type="text" id="display" placeholder="Enter nums here">
+            </td>
+        </tr>
+        <tr>
+            <td class="printform" colspan="4">
+                <input class="print" type="text" id="result" placeholder="Sum">
+            </td>
+        </tr>
+        
+    </table>
+    <table class = "calc" border="1">
+        <tr>
+            <td class ="btn etc" colspan="3" onclick="reset()">AC</td>
+            <td class ="btn etc" onclick="add('/')">/</td>
+        </tr>
+        <tr>
+            <td class ="btn n" onclick="add(7)">7</td>
+            <td class ="btn n" onclick="add(8)">8</td>
+            <td class ="btn n" onclick="add(9)">9</td>
+            <td class ="btn etc" onclick="add('*')">*</td>
+        </tr>
+        <tr>
+            <td class ="btn n" onclick="add(4)">4</td>
+            <td class ="btn n" onclick="add(5)">5</td>
+            <td class ="btn n" onclick="add(6)">6</td>
+            <td class ="btn etc" onclick="add('-')">-</td>
+        </tr>
+        <tr>
+            <td class ="btn n" onclick="add(1)">1</td>
+            <td class ="btn n" onclick="add(2)">2</td>
+            <td class ="btn n" onclick="add(3)">3</td>
+            <td class ="btn etc" onclick="add('+')">+</td>
+        </tr>
+        <tr>
+            <td class ="btn n" colspan="2" onclick="add(0)">0</td>
+            <td class ="btn n" onclick="add('.')">.</td>
+            <td class ="btn equal" onclick="calculate()">=</td>
+        </tr>
+    </table>
+    
+    <script src="js/calc.js">
+    </script>
+</body>
+</html>
