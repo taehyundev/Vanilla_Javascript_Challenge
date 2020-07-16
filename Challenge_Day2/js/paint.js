@@ -7,8 +7,6 @@ var chmodBtn = document.querySelector('.mode')
 var ctx = canvas.getContext("2d");
 var paint = false;
 var fillMode = false;
-ctx.strokeStyle = "black"
-ctx.fillStyle = "white"
 ctx.fillRect(0,0,canvas.width, canvas.height);
 //move 시 선이 그려지게
 function moveMoveHandler(e){
