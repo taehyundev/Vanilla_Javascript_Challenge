@@ -58,3 +58,16 @@ h1{
 .display{
     display: block;
 }
+.chkmodal{
+    text-align: center;
+    opacity: 1;
+    position: absolute;
+    top:100%;
+    left:100%;
+    transform: translate(-130%,-130%);
+    width: 200px;
+    height: 80px;
+    border-radius: 10px;
+    background-color: rgb(65, 64, 64);
+    color:white;
+}
