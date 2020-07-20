@@ -1,0 +1,38 @@
+.sidenav {
+    height:100%;
+    width: 0;
+    position: fixed;
+    z-index:1;
+    top: 0;
+    left: 0;
+    background-color: rgb(179, 179, 179);
+    overflow-x: hidden;
+    transition:0.5s ease-in-out;
+    padding-top: 60px;
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    display: block;
+}
+.sidenav a:hover, .offcanvas a:focus {
+    color: #000;
+}
+.closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px !important;
+    margin-left: 50px;
+}
+.openmenu:hover {
+    color:rgb(184, 185, 185);
+    transition:0.5s ease-in-out;
+}
+.openmenu {
+    font-size: 25px;
+    cursor:pointer;
+    transition:0.5s ease-in-out;			
+}
