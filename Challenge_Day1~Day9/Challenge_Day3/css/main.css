@@ -1,0 +1,56 @@
+body{
+    
+    font-family: Consolas, monaco, monospace;
+}
+.mainform{
+    width: 800px;
+    height: 100%;
+     background-color:rgb(217, 177, 219);
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+.inputform{
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%,0%);
+}
+button{
+    width: 230px;
+    height: 30px;
+    
+    border-style: solid;
+    border-radius: 10px;
+}
+button:hover{
+    background-color: rgb(179, 174, 174);
+}
+input{
+    width: 220px;
+    border-radius: 10px;
+}
+h1{
+    position: absolute;
+    top: 0%;
+    left: 50%;
+    transform: translate(-50%,0%);  
+}
+#showall{
+    
+    position: absolute;
+    top: 300px;
+    left: 50%;
+    transform: translate(-50%,0%);
+    width: 530px;
+    height: 400px;
+    text-align: center;
+    background-color: rgb(178, 145, 197);   
+    border-radius: 10px;
+    color: white;
+}
+#showall:hover{
+    
+    background-color: rgb(168, 124, 196);
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>LocalStorage Sample</title>
+<link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="mainform">
+        <h1>Challenge_Day3</h1>
+        <div class="inputform">
+            <input type="text" class="a_key" placeholder="KEY"><br>
+            <input type="text" class="a_value" placeholder="VALUE"><br>
+
+            <button class="btn setstorage" onclick="setBtn()">set storage</button><br>
+            <button class="btn getstorage" onclick="getBtn()">get storage</button><br>
+            <button class="btn showall" onclick="showAll()">show all</button><br>
+            <button class="btn clearall" onclick="clearAll()">clear all</button><br>
+        </div>
+            <br>
+        <div id = "showall"></div>
+    </div>
+    <script src="js/storage.js"></script>
+</body>
+</html>

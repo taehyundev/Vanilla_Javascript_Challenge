@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/paint.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paint</title>
+</head>
+<body>
+    <div class="paintform">
+        <canvas  id="canvas"></canvas>
+        <br><br>
+        <div class = "color_table">
+            <div class="c color_black" onclick="setColor('black')"></div>
+            <div class="c color_red" onclick="setColor('red')"></div>
+            <div class="c color_blue" onclick="setColor('blue')"></div>
+            <div class="c color_green" onclick="setColor('green')"></div>
+            <div class="c color_yellow" onclick="setColor('yellow')"></div>
+            <div class="c color_white" onclick="setColor('white')"></div>
+            
+        
+        </div>
+        <div class ="menual">
+        <button class="btn mode" onclick="setMode()">fill</button>
+        <button class="btn" onclick="save()">save</button>
+        </div>
+        <br>
+        <br>
+        <div class="range_bar">
+        <input class="brush_range" type='range' min ="1" max="20" step="0.5" value="2.5"oninput="changeHandler()"/>
+        <span class="range_value">2.5</span>
+        </div>
+    </div>
+    <script src="js/paint.js"></script>
+    <script src="js/detailfunc.js"></script>
+</body>
+</html>
