@@ -1,0 +1,46 @@
+.mainframe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    width: 800px;
+    height: 340px;
+    text-align: center;
+}
+.frm_ct{
+    float: left;
+    width: 240px;
+    height: 240px;
+    border-style: solid;
+    border-color: black;
+    border-radius: 25px;
+    margin: 10px;
+    transition: all ease 2s 0s;
+}
+
+.btn{
+    float: left;
+    margin: 0px 105px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    border-style: solid;
+    border-color: black;
+    transition: all ease 2s 0s;
+}
+.action1,.btn1{
+    background-color: rgb(93, 185, 246);
+}
+
+.action2,.btn2{
+    color: gray;
+    background-color: white;
+}
+
+.action3,.btn3{
+    color: gray;
+    background-color: white;
+}
+.showing1,.showing2,.showing3,.action1,.action2,.action3{
+    cursor: pointer;
+}
