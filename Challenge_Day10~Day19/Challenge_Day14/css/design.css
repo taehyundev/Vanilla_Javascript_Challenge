@@ -1,0 +1,81 @@
+body{
+    background-color: rgb(156, 156, 156);
+}
+.btn{
+    width: 130px;
+    height: 40px;
+    margin: 5px;
+    border-style: solid;
+    border-radius: 5px;
+    transition: all ease 0.5s;
+
+}
+.btn:hover{
+    color:white;
+    width: 180px;
+}
+.btnform{
+    position: absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    z-index: 1;
+}
+.b1{
+    background-color: rgb(240, 97, 97);
+}
+.b1:hover{
+    background-color: rgb(161, 24, 24);
+}
+.b2{
+    background-color: rgb(245, 198, 111);
+}
+.b2:hover{
+    background-color: rgb(196, 148, 60);
+}
+.b3{
+    background-color: rgb(236, 236, 126);
+}
+.b3:hover{
+    background-color: rgb(182, 182, 41);
+}
+.menu{
+    position: absolute;
+    left:-550px;
+    transition: all ease 1.5s;
+}
+.it{
+    position: absolute;
+    left: 500px;
+    top: 70px;
+    width: 150px;
+    height: 50px;
+    background-color: rgb(163, 163, 248);
+    border-color: rgba(0, 0, 0, 0.397);
+    box-shadow: black 5px 5px 5px;
+    z-index: -1;
+    border-radius: 5px;
+}
+.it:hover{
+    cursor: pointer;
+}
+.contents{
+    background-color: white;
+    width: 550px;
+    height: 600px;
+    box-shadow: black 5px 5px 5px;
+    z-index: 2;
+}
+.overlay{
+    background-color:rgba(0, 0, 0, 0.514);
+    margin: 0px 0px;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+.hidden{
+    display: none;
+}
