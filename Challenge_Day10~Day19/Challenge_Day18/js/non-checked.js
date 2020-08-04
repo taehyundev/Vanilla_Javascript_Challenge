@@ -12,13 +12,13 @@ var listAll = JSON.parse(localStorage.getItem(KEY))
 //toDO list 를 기반으로 check list localstorage 구성
 function getCheckList(){
     //console.log(listAll)
-    console.log(TDList)
+    
     if(listAll != null){
         for(var i=0; i<listAll.length; i++){
-            if(listAll[i].check === "checked"){
+            if(listAll[i].check === "non-check"){
                 checkList.push({
                     "contents":listAll[i].contents,
-                    "check" : listAll[i].check
+                    "non-check" : listAll[i].check
                 })
             }
         }
@@ -31,7 +31,7 @@ function getCheckList(){
     getCheckList()
     if(localStorage.getItem(KEY) === null||localStorage.getItem(CHK_KEY) === null ||checkList.length===0){
         TDList = false;
-        checkedDiv.innerHTML = `${checkTitle} <br>오늘 완료된 플랜이 없습니다.`
+        checkedDiv.innerHTML = `${checkTitle} <br>오늘의 플랜이 없습니다.`
     }else{
         TDList = true;
         showlist(checkedDiv,checkTitle,checkList)

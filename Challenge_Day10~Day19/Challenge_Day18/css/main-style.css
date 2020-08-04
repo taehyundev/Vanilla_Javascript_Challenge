@@ -1,7 +1,7 @@
 body{
     background-color: gray;
-    text-align: center;
     font-family: Consolas, monaco, monospace;
+    text-align: center;
 }
 #main-frm{
     position: absolute;

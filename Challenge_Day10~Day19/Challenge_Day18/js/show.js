@@ -11,7 +11,7 @@ function showlist(formDiv, formTitle, list){
         chkBtn.classList.add("chk")
         removeBtn.classList.add("btn")
         removeBtn.classList.add("remove")
-        contentsSpan.innerHTML = `Plan ${i+1} - ${list[i].contents}`
+        contentsSpan.innerHTML = `Plan ${i+1} 💬 :  ${list[i].contents}`
         if(list[i].check === "checked"){
             chkBtn.style.color="green"
             contentsSpan.style.textDecoration = "line-through"
@@ -39,7 +39,7 @@ function check(e, list, KEY){
         var span = e.parentNode.firstChild
         var todo_ele = e.parentNode.firstChild.innerHTML
         var t = todo_ele.split(' ')
-        t=t.splice(3,t.length-2)
+        t=t.splice(5,t.length-2)
         var searchname = t.join(' ')
         for(var i=0; i<list.length;i++)
         {
@@ -69,7 +69,7 @@ function remove(e, list,KEY){
       //  console.log(parentNode)
         var todo_ele = e.parentNode.firstChild.innerHTML
         var t = todo_ele.split(' ')
-        t=t.splice(3,t.length-2)
+        t=t.splice(5,t.length-2)
         var searchname = t.join(' ')  
         for(var i=0; i<list.length;i++)
         {
