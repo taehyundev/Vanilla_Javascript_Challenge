@@ -1,6 +1,3 @@
-body{
-    background-color: gray;
-}
 .ct{
     margin: 10px;
 }
@@ -19,11 +16,6 @@ body{
     color:red
 }
 #todomain{
-    text-align: center;
-    position: absolute;
-    left: 50%;
-    top:30%;
-    transform: translate(-50%,-50%);
     width: -moz-fit-content;
     height: -moz-fit-content;
     background-color: white;
@@ -45,4 +37,8 @@ body{
 }
 .click:hover{
     background-color: blue;
+}
+h3{
+    font-size: 15px;
+    font-weight: 400;
 }
