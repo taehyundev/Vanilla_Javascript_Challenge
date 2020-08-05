@@ -1,0 +1,49 @@
+#main-menu{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #F7F7F7;
+    padding: 8px 3px;
+    border-top: 1px solid #C1C1C1;
+    display: block;
+}
+#main-menu ul li{
+    display: inline;
+    padding: 25px;
+    color: rgb(165, 165, 165);
+}
+a{
+    text-align: center;
+    text-decoration: none;
+}
+
+html,
+body,
+div,
+a,
+i,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+  box-sizing: border-box;
+}
+#main-menu{
+  display: block;
+}
+body {
+  line-height: 1;
+}
+
+ul {
+  list-style: none;
+}
+#main-menu ul li:hover{
+    color: rgb(0, 0, 0);
+}
