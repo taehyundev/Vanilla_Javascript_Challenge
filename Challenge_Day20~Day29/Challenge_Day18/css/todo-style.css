@@ -1,0 +1,44 @@
+.ct{
+    margin: 10px;
+}
+.chk{
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: gray;
+    cursor: pointer;
+}
+.remove{
+    border-style: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(207, 207, 207);
+}
+.remove:hover{
+    color:red
+}
+#todomain{
+    width: -moz-fit-content;
+    height: -moz-fit-content;
+    background-color: white;
+    box-shadow: black 5px 5px 5px;
+    padding: 30px;
+}
+
+.contents{
+    width: 200px;
+    margin-top:30px
+}
+.click{
+    color: white;
+    border-style: none;
+    width: 210px;
+    height: 20px;
+    background-color: rgb(144, 144, 247);
+    transition: all ease 0.5s;
+}
+.click:hover{
+    background-color: blue;
+}
+h3{
+    font-size: 15px;
+    font-weight: 400;
+}

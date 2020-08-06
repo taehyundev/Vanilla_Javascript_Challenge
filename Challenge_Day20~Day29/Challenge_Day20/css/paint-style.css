@@ -1,0 +1,83 @@
+body{
+    font-family: Consolas, monaco, monospace;
+}
+canvas{
+    background-color: white;
+    border-radius: 50px;
+    box-shadow: 5px 5px 15px black;
+}
+.paintform{ 
+    position: absolute;
+    top:3%;
+    left:50%;
+    transform: translate(-50%, 0%);
+}
+h3{
+    text-align: center;
+}
+.brush_range{
+    width: 390px;
+}
+.color_table{
+    padding-left: 5%;
+}
+.c{
+    float: left;
+    width: 40px;
+    height: 40px;
+    border-radius:40px;
+    box-shadow: 4px 3px 7px rgb(78, 68, 68);
+    margin: 12px;
+}
+.color_black{
+    background-color: black;
+}
+.color_red{
+    background-color: red;
+}
+.color_blue{
+    background-color: blue;
+}
+.color_green{
+    background-color: green;
+}
+.color_yellow{
+    background-color: yellow;
+}
+.color_white{
+    background-color: white;
+}
+.range_value{
+    font-weight: bold;
+}
+.menual{
+    
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, 0%);
+}
+.btn{
+    width: 90px;
+    height: 30px;
+    margin: 5px;  
+    font-weight: bolder;  
+    background-color:white;
+    border-style: solid;
+    border-radius: 10px;
+    border-color: rgb(206, 204, 204);
+    border:1;
+    outline: 0;
+}
+.btn:hover{
+    background-color:rgb(240, 255, 255);
+    border-color: rgb(151, 149, 149);
+}
+
+.range_bar{
+    
+    position: absolute;
+    top:100%;
+    left:50%;
+    transform: translate(-50%, 90%);
+}

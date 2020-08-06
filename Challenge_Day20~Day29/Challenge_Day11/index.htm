@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="css/btnstyle.css">
+    <link rel="stylesheet" type="text/css" href="css/modal.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="overlay hidden"></div>
+    <button class="btn bg_r b1">버튼1</button><br>
+    <button class="btn bg_o b2">버튼2</button><br>
+    <button class="btn bg_y b3">버튼3</button><br>
+    <!--모달창-->
+    <div id="md_form" class="hidden">
+        <div class="cancel">X</div>
+        <div class="md_txt">
+            <div class="md_title">[ Info ]</div><br><br>
+            <div class="md_contents"></div>
+            <br><br><br>
+            <button class="confirm">확인</button>
+        </div>
+    </div>
+    <script src="js/btnevent.js"></script>
+    <script src="js/modal.js"></script>
+</body>
+</html>
