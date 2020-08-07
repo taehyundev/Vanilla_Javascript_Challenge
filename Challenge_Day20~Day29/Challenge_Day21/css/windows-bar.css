@@ -19,3 +19,16 @@
     background-color: #f0f0f0;
     color:rgb(67, 147, 238);
 }
+
+.windows-form{
+    position: absolute;
+    bottom: -600px;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+    background-color: #ebe5e5e8;
+    transition: all ease 0.2s;
+}   
+.hidden{
+    display: none;
+}
