@@ -1,0 +1,23 @@
+#bottom-bar ul .timer-bar{
+    position: absolute;
+    width: 75px;
+    top:0%;
+    right: 60px;
+    height:100%;
+    padding-left: 0%;
+    padding-right: 10px;
+}
+#bottom-bar ul .timer-bar:hover{
+    background-color: #f0f0f0;
+}
+.timer-form,.timer-comments{
+    padding: 10px;
+}
+.timer-comments{
+    position: absolute;
+    top:0%;
+    transform: translate(0%,-15%);
+    font-size: 12px;
+    line-height: 16px;
+    text-align: right;
+}

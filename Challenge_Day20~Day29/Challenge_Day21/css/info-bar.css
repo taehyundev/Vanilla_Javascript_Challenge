@@ -1,0 +1,13 @@
+#bottom-bar ul .info-bar{
+    position: absolute;
+    top:0%;
+    right:15px;
+    padding-left: 15px;
+
+}
+.fa-comment-alt{
+    font-size: 18px;
+}
+#bottom-bar ul .info-bar:hover{
+    background-color: #f0f0f0;
+}

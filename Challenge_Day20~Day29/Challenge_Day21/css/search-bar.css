@@ -1,0 +1,26 @@
+.search-bar{
+  background-color: white;
+}
+.icon{
+  position: relative;
+  left: -1%;
+}
+input:focus {outline:none;}
+#bottom-bar ul .search-bar{
+  display: inline;
+  padding: 6px 15px ;
+  margin: 1px;
+}
+.fa-search{
+  font-size: 15px;
+  color: rgb(73, 70, 70);
+}
+#search{
+  width: 330px;
+}
+
+input::-webkit-search-decoration,
+input::-webkit-search-cancel-button,
+input::-webkit-search-results-button,
+input::-webkit-search-results-decoration { display: none; }
+

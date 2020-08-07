@@ -1,0 +1,15 @@
+#bottom-bar ul .view-more-bar{
+    position: absolute;
+    top:0%;
+    right:205px;
+    padding: 8px;
+    
+
+}
+#bottom-bar ul .view-more-bar:hover{
+    background-color: #f0f0f0;
+}
+
+.fa-chevron-up{
+    font-size: 18px;
+}

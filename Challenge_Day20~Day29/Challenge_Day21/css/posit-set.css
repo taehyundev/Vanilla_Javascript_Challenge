@@ -1,0 +1,33 @@
+div,
+ul,
+li,
+i,
+input,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+span.lan-comments{
+    
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+span.timer-comments{
+    
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+body{
+    background-image: url(../image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
