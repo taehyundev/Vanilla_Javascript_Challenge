@@ -1,0 +1,27 @@
+#bottom-bar ul .view-more-bar{
+    position: absolute;
+    top:0%;
+    right:205px;
+    padding: 8px;
+    
+
+}
+#bottom-bar ul .view-more-bar:hover{
+    background-color: #f0f0f0;
+}
+
+.fa-chevron-up{
+    font-size: 18px;
+}
+
+.more-view-form{
+    position: absolute;
+    right:150px;
+    bottom: -180px;
+    width: 150px;
+    height: 180px;
+    z-index: -1;
+    background-color: #ebe5e5e8;
+    transition: all ease 0.2s;
+    box-shadow: 0px 0px 3px 1px rgba(131, 131, 131, 0.904);
+}

@@ -1,0 +1,39 @@
+div,
+ul,
+li,
+i,
+input,
+html,
+body{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+span.lan-comments{
+    
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+span.timer-comments{
+    
+    -ms-user-select: none; 
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+.bg{
+    position: absolute;
+    top:0%;
+    left: 0%;
+    width:100%;
+    height: 100%;
+    background-image: url(../image/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: -1;
+}

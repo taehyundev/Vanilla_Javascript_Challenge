@@ -1,0 +1,36 @@
+#bottom-bar{
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ebe5e5;
+    padding: 8px 0px;
+    display: block;
+    z-index: 10;
+}
+.fa-windows{
+    font-size: 18px;
+}
+#bottom-bar ul li{
+    display: inline;
+    padding: 8px 15px ;
+}
+.windows-bar:hover{
+    background-color: #f0f0f0;
+    color:rgb(67, 147, 238);
+}
+
+.windows-form{
+    position: absolute;
+    bottom: -600px;
+    width: 600px;
+    height: 600px;
+    z-index: -1;
+    background-color: #ebe5e5ed;
+    transition: all ease 0.2s;
+}   
+.hidden{
+    display: none;
+    visibility: hidden;
+}
