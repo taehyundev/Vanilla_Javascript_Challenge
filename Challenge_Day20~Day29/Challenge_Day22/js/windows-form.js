@@ -15,8 +15,4 @@ windowsBar.addEventListener("click",()=>{
         openw = false;
     }
 })
-document.querySelector(".bg").addEventListener("click",()=>{
-    folder_frm.style.backgroundColor = "rgba(255, 255, 255, 0);"
-    console.log("a")
-    clear()
-})
+
