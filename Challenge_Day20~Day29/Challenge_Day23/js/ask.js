@@ -1,11 +1,41 @@
-var writeBtn = document.querySelector(".write-btn")
-var newQuestCt = document.querySelector(".new-question")
-var list = []
-var listNull = true
-const anonKey = "anon_question"
+function two_digit(n){
+    if(n<10){
+        return `0${n}`
+    }
+    return `${n}`
+}
+function questionUpdate(){
+    var writeText = document.querySelector(".write-text").value
+    const timeNow = new Date()
+    var year=timeNow.getFullYear(),
+    month=timeNow.getMonth() + 1,
+    date=timeNow.getDate();
+    y = year-2000
+    mn = two_digit(month)
+    d = two_digit(date)
 
-
-
+    if(writeText != ""){
+        var obj = {"question":writeText,
+                    "question-user":"anon",
+                    "date":`${y}-${mn}-${d}`,
+                    "answer":null,
+                    "answer-user":"me",
+                    "is-reject":false,
+                    "is-answer":false
+                }
+        list.push(obj)
+        newQuestionCount++
+        saveStorage(list)
+        newQuestNodeAdd(obj)
+        alert("질문을 완료하였습니다!")
+        
+        document.querySelector(".write-text").value=""
+    
+        location.href = "answer.htm"
+    }else{
+        alert("질문을 입력해주세요!")
+    }
+}
 function newQuestNodeAdd(obj){
     var mainDiv = document.createElement("div")
     var userInfo = document.createElement("div")
@@ -40,32 +70,6 @@ function newQuestNodeAdd(obj){
     newQuestCt.appendChild(mainDiv)
     
 }
-function init(){
-    var userinfo = JSON.parse(localStorage.getItem("userinfo"))
-    var value = JSON.parse(localStorage.getItem(anonKey))
-    if(value === null){
-        listNull = true
-    }else{
-        
-        list = value
-        for(var i =list.length-1; i >= 0; i--){
-            if(!list[i]["is-reject"] && !list[i]["is-answer"] ){
-                newQuestNodeAdd(list[i])
-                newQuestionCount++
-            }else if(list[i]["is-answer"]){
-                finQuestionCount++
-            }else if(list[i]["is-reject"]){
-                rejectQuestionCount++
-            }
-        }
-        listNull = false
-    }
-    
-    menu_set("n")
-    menu_event()
-    console.log(value)
-    writeBtn.addEventListener("click",questionUpdate)
-
-
+function saveStorage(l){
+    localStorage.setItem(anonKey, JSON.stringify(l))
 }
-init()

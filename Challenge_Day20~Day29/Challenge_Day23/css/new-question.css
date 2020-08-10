@@ -17,7 +17,6 @@
     padding-top: 10px;
     font-size: 13px;
     color: rgb(136, 136, 136);
-    font-weight: 100;
 }
 .name{
     padding-right: 10px;
@@ -44,4 +43,8 @@
 .answer-btn{
     color:rgb(65, 65, 216);
     border-color: rgb(65, 65, 216);
+}
+.new-question{
+    height: 100vh;
+    overflow: auto;
 }

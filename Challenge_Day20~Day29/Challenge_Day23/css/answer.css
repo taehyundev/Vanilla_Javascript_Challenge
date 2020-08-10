@@ -1,0 +1,11 @@
+.answer-icon{
+    background-image: url(../image/ask_icon.png);
+    width: 100px;
+    height: 100px;
+}
+.main-fin{
+    margin-top: 5px;
+    width: 100%;
+    height: 200px;
+    background-color: white;
+}
