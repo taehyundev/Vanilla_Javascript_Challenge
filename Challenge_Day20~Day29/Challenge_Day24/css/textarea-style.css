@@ -1,0 +1,50 @@
+.write-text{
+    width: 250px;
+    height: 100px;
+    background-color: rgb(240, 239, 239);
+    border-style: none;
+    resize: none;
+    padding: 15px;
+    font-weight: bold;
+
+}
+textarea:focus {
+    outline: none;
+}
+textarea::placeholder{
+    font-weight: bold;
+    color:rgb(165, 165, 165)
+}
+
+.btn{
+    width: 80px;
+    height: 30px;
+    font-size: 14px;
+    line-height: 32px;
+    margin-top: -15px;
+    text-align: center;
+    border-radius: 25px;
+    border: 1px solid #e7e7e7;
+}
+.anon-btn{
+    color: #4c4d51;
+    background-color: #fff;
+}
+
+.write-btn{
+    color:white;
+    background-color: #7986cb;
+}
+.write-contents{
+    position: absolute;
+    left: 50%;
+    top: 120px;
+    transform: translate(-50%,-20%);
+}
+.btn-form{
+    position: relative;
+    left: 50px;
+}
+.anon-btn{
+    cursor: text;
+}
