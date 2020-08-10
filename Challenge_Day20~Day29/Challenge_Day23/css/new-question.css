@@ -17,6 +17,7 @@
     padding-top: 10px;
     font-size: 13px;
     color: rgb(136, 136, 136);
+    font-weight: 100;
 }
 .name{
     padding-right: 10px;
@@ -25,4 +26,22 @@
     padding-left: 10px;
     font-size: 16px;
     font-weight: 600;
+}
+.b{
+    width: 75px;
+    height: 32px;
+    border-radius: 20px;
+    border-style: solid;
+    margin-left: 12px;
+    border-width: 1px;
+    background-color: white;
+}
+.reject-btn{
+    color: rgb(195, 195, 195);
+    border-color: rgb(195, 195, 195);
+}
+
+.answer-btn{
+    color:rgb(65, 65, 216);
+    border-color: rgb(65, 65, 216);
 }

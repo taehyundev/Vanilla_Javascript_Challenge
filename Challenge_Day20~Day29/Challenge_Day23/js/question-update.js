@@ -1,12 +1,6 @@
 var writeBtn = document.querySelector(".write-btn")
 var newQuestCt = document.querySelector(".new-question")
-var fin_menu = document.querySelector(".fin-question-menu")
-var new_menu = document.querySelector(".new-question-menu")
-var reject_menu = document.querySelector(".reject-question-menu")
 var list = []
-var newQuestionCount = 0
-var rejectQuestionCount = 0
-var finQuestionCount = 0
 var listNull = true
 const anonKey = "anon_question"
 
@@ -52,78 +46,56 @@ function newQuestNodeAdd(obj){
     var userName= document.createElement("span")
     var userDate= document.createElement("span")
     var contents = document.createElement("div")
+    var rejectBtn = document.createElement("button")
+    var answerBtn = document.createElement("button")
+    var btnDiv = document.createElement("div")
     mainDiv.classList.add("main-quest")
     userInfo.classList.add("info")
     userName.classList.add("name")
     userDate.classList.add("date")
     contents.classList.add("contents")
+    rejectBtn.classList.add("reject-btn")
+    answerBtn.classList.add("answer-btn")
+    rejectBtn.classList.add("b")
+    answerBtn.classList.add("b")
+    btnDiv.classList.add("btn-div")
     userName.innerHTML = obj["question-user"]=="anon"?"익명":obj["question-user"]
     contents.innerHTML = obj["question"]
     userDate.innerHTML = obj["date"]
+    rejectBtn.innerHTML = "거절하기"
+    answerBtn.innerHTML = "답하기"
     userInfo.appendChild(userName)
     userInfo.appendChild(userDate)
     mainDiv.appendChild(userInfo)
     mainDiv.appendChild(contents)
+    btnDiv.appendChild(rejectBtn)
+    btnDiv.appendChild(answerBtn)
+    mainDiv.appendChild(btnDiv)
     newQuestCt.appendChild(mainDiv)
+    
 }
 function saveStorage(l){
     localStorage.setItem(anonKey, JSON.stringify(l))
 }
-function menu_set(){
-    
-    var main_form = document.createElement("div")
-    var menu_count = document.createElement("div")
-    var menu_name = document.createElement("div")
-    menu_count.classList.add("fin-count")
-    menu_name.classList.add("fin-name")
-    menu_count.innerHTML = finQuestionCount
-    menu_name.innerHTML = "답변완료"
-    main_form.classList.add("fin-form")
-    main_form.appendChild(menu_count)
-    main_form.appendChild(menu_name)
-    fin_menu.appendChild(main_form)
-    
-    main_form = document.createElement("div")
-    menu_count = document.createElement("div")
-    menu_name = document.createElement("div")
-    menu_count.classList.add("new-count")
-    menu_name.classList.add("new-name")
-    menu_count.innerHTML = newQuestionCount
-    menu_name.innerHTML = "새질문"
-    main_form.classList.add("new-form")
-    main_form.appendChild(menu_count)
-    main_form.appendChild(menu_name)
-    new_menu.appendChild(main_form)
 
-    main_form = document.createElement("div")
-    menu_count = document.createElement("div")
-    menu_name = document.createElement("div")
-    menu_count.classList.add("reject-count")
-    menu_name.classList.add("reject-name")
-    menu_count.innerHTML = rejectQuestionCount
-    menu_name.innerHTML = "거절질문"
-    main_form.classList.add("reject-form")
-    main_form.appendChild(menu_count)
-    main_form.appendChild(menu_name)
-    reject_menu.appendChild(main_form)
-
-}
 function init(){
     var value = JSON.parse(localStorage.getItem(anonKey))
     if(value === null){
-        menu_set()
         listNull = true
     }else{
         
         list = value
         for(var i =0; i < list.length; i++){
-            if(!list[i]["is-reject"] && !list[i]["is-answer"] )
+            if(!list[i]["is-reject"] && !list[i]["is-answer"] ){
                 newQuestNodeAdd(list[i])
-            newQuestionCount++
+                newQuestionCount++
+            }
         }
-        menu_set()
         listNull = false
     }
+    
+    menu_set("q")
+    menu_event()
     console.log(value)
     writeBtn.addEventListener("click",questionUpdate)
 }
