@@ -3,7 +3,7 @@ var userName =""
 const userInfo ={
     0:{
         "name" : "kang",
-        "ID":"cake12690",
+        "ID":"cake16290",
         "PW":1234
     },
     1:{    

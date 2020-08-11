@@ -1,0 +1,13 @@
+#calendar{
+    border-collapse: collapse;
+    text-align: center;
+    border-color: rgb(219, 218, 218);
+    border-left: 0px;
+    border-right: 0px;
+}
+.mainform{
+    position: absolute;
+    top:30%;
+    left: 50%;
+    transform: translate(-50%,-20%);
+}
