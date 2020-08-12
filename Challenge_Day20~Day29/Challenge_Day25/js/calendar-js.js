@@ -44,7 +44,6 @@ function calendarMake(){
     }
 
     var list = JSON.parse(localStorage.getItem("classinfo"))
-    console.log("aa")
     if(list !== null){
         classinfo = list
         var classLength = list.length

@@ -13,18 +13,39 @@
         </table>
         <button class="setting-class-btn mb">setting</button>
         <button class="save-class-btn mb">save</button>
-        <button class="loadng-class-btn mb">loading</button>
+        <button class="loading-class-btn mb">loading</button>
         <button class="reset-class-btn mb">reset</button>
     </div>
     <div class="setting_class hidden">
-        <select class="day"></select><br>
-        <select class="get-start-class" ></select><br>
-        <select class="get-fin-class"></select><br>
-        <input type="text" class="subject-name" placeholder="과목을 입력해주세요"><br>
-        <button class="calendar-setting btn">버튼</button>
+        <button class="cb cancel-set">X</button>
+        <div class="center_setting">
+            <select class="day"></select><br>
+            <select class="get-start-class" ></select><br>
+            <select class="get-fin-class"></select><br>
+            <input type="text" class="subject-name" placeholder="과목을 입력해주세요"><br>
+            <button class="calendar-setting btn">버튼</button>
+        </div>
+    </div>
+    
+    <div class="save_class hidden">
+        <button class="cb cancel-save">X</button>
+        <div class="center">
+            <button class="save_list1 sb">리스트1</button><br>
+            <button class="save_list2 sb">리스트2</button><br>
+            <button class="save_list3 sb">리스트3</button><br>
+        </div>
+    </div>
+    <div class="load_class hidden">
+        <button class="cb cancel-load">X</button>
+        <div class="center">
+            <button class="load_list1 sb">리스트1</button><br>
+            <button class="load_list2 sb">리스트2</button><br>
+            <button class="load_list3 sb">리스트3</button><br>
+        </div>
     </div>
 </body>
 <script src="js/select-menu.js"></script>
 <script src="js/calendar-js.js"></script>
 <script src="js/modal.js"></script>
+<script src="js/save&load.js"></script>
 </html>
