@@ -1,0 +1,13 @@
+.contents{
+    font-size: 70px;
+}
+.contents{
+    cursor: pointer;
+}
+.contents{
+    color:rgb(88, 88, 88);
+}
+
+.contents:hover{
+    color:rgb(0, 0, 0);
+}
