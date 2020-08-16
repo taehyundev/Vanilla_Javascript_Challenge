@@ -1,0 +1,50 @@
+#notice-board-main{
+    position: absolute;
+    left: 50%;
+    top:30px;
+    transform: translate(-50%,0%);
+}
+#notice-board{
+    border-collapse: collapse;
+    text-align: center;
+    border-right: rgb(187, 187, 187);
+    border-left: rgb(187, 187, 187);
+}
+.no-m{
+    width: 50px;
+}
+.board-name-m{
+    width: 500px;
+}
+.visit-num-m{
+    width: 50px;
+}
+.update-m{
+    width: 70px;
+}
+.remove-m{
+    width: 70px;
+}
+.no-m,.board-name-m,.visit-num-m,.update-m,.remove-m{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.create-board{
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+    width: 75px;
+    height: 24px;
+    border-style: solid;
+    border-radius: 10px;
+    background-color: rgb(235, 232, 232);
+}
+.create-board:hover{
+    background-color: rgb(211, 210, 210);
+}
+.board-name:hover{
+    text-decoration: underline;
+}
+h1{
+    text-align: center;
+}

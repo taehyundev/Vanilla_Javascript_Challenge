@@ -1,0 +1,38 @@
+#update-main{    
+    position: absolute;
+    left: 50%;
+    top:30px;
+    transform: translate(-50%,0%);
+}
+#update{
+    border-collapse: collapse;
+    text-align: center;
+    border-right: rgb(187, 187, 187);
+    border-left: rgb(187, 187, 187);
+}
+.update-btn{
+    margin-top: 10px;
+    position: absolute;
+    left: 0%;
+}
+.contents{
+    width: 700px;
+    height: 500px;;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    resize: none;
+}
+.title{
+    width: 700px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+.password{
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+.title-menu{
+    width: 100px;
+}

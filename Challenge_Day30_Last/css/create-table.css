@@ -1,0 +1,47 @@
+#create-main{
+    position: absolute;
+    left: 50%;
+    top:30px;
+    transform: translate(-50%,0%);
+}
+#create{
+    border-collapse: collapse;
+    text-align: center;
+    border-right: rgb(187, 187, 187);
+    border-left: rgb(187, 187, 187);
+}
+.title-create{
+    width: 700px;
+    height: 20px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+.title-menu-td{
+    width: 100px;
+}
+.contents-create{
+    width: 700px;
+    height: 500px;;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+    resize: none;
+}
+.password-create{
+    width: 700px;
+    background-color: rgba(0, 0, 0, 0);
+    border-style: none;
+}
+textarea:focus {
+  outline: none;
+}
+button:focus {
+  outline: none;
+}
+input:focus {
+  outline: none;
+}
+.write-btn{
+    margin-top: 10px;
+    position: absolute;
+    left: 0%;
+}

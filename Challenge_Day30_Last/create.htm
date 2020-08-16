@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>   
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="create-main">
+        <h1>글쓰기</h1>
+        <table id="create" border="1">
+            <tr>
+                <td class="title-menu-td">제목</td>
+                <td class="title-create-td">
+                    <input class="title-create" type="text">
+                </td>
+            </tr>  
+            <tr>
+                <td>내용</td>
+                <td>
+                    <textarea class="contents-create"></textarea>
+                </td>
+            </tr>
+            <tr>
+                <td>패스워드</td>
+                <td>
+                    <input type="password" class="password-create">
+                </td>
+            </tr>
+        </table>
+
+        <button class="write-btn"> 
+            <i class="fas fa-pencil-alt"></i>
+            Write
+        </button>
+        <button class="back">
+            <i class="fas fa-undo-alt"></i>
+            Back
+        </button>
+    </div>
+</body>
+<script src="js/create.js"></script>
+</html>

@@ -1,0 +1,28 @@
+#show-main{
+    position: absolute;
+    left: 50%;
+    top:30px;
+    transform: translate(-50%,0%);
+}
+#show{
+    border-collapse: collapse;
+    text-align: center;
+    border-right: rgb(187, 187, 187);
+    border-left: rgb(187, 187, 187);
+}
+#show .title{
+    width: 100px;
+}
+#show .contents{
+    width: 400px;
+    height: 200px;
+    white-space:pre;
+}
+#show td{
+    text-align: left;
+}
+.back{
+    margin-top: 10px;
+    position: absolute;
+    right: 0%;
+}
